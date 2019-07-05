@@ -29,7 +29,7 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "dev": "webpack-dev-server"
   },
   "eslintConfig": {
     "extends": "react-app"
