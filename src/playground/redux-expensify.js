@@ -175,6 +175,14 @@ const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
 
     return startDateMatch && endDateMatch && textMatch;
 
+  }).sort((a, b) => {
+    if(sortBy === 'date' ){
+      return a.createdAt < b.createdAt ? 1: 11;
+    }
+
+    if( sortBy === 'amount' ){
+      return a.amount < b.amount ? 1: -1;
+    }
   });
 }
 
@@ -191,10 +199,10 @@ console.log(expenseOne);
 // store.dispatch(removeExpense({ id: expenseOne.expense.id }));
 // store.dispatch(editExpense(expenseTwo.expense.id, { amount: 500 }));
 
-store.dispatch(setTextFilter('rent'));
+// store.dispatch(setTextFilter('rent'));
 // store.dispatch(setTextFilter());
 
-// store.dispatch(sortByAmount());
+store.dispatch(sortByAmount());
 // store.dispatch(sortByDate());
 
 // store.dispatch(setStartDate(125));
