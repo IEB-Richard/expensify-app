@@ -37,7 +37,7 @@
     "serve": "live-server public/",
     "build": "webpack",
     "dev": "webpack-dev-server",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "eslintConfig": {
     "extends": "react-app"
