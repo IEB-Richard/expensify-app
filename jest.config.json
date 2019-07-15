@@ -1,0 +1,6 @@
+{
+  "setupFiles": [
+    "raf/ployfill",
+    "<rootDir>/src/tests/setupTests.js",
+  ]
+}
