@@ -6,7 +6,6 @@ import { SingleDatePicker } from 'react-dates';
 export default class ExpenseForm extends React.Component {
   constructor(props) {
     super(props);
-    console.log("here", props);
 
     this.state = {
       description: props.expense ? props.expense.description : '',
